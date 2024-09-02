@@ -30,6 +30,8 @@
 
 		<!-- Test -->
 		<junit.version>4.11</junit.version>
+		
+		<egovframework.rte.version>3.8.0</egovframework.rte.version>
 
 	</properties>
 	
@@ -110,6 +112,19 @@
     		<artifactId>json-simple</artifactId>
     		<version>1.1.1</version>
 		</dependency>
+		
+		<dependency>
+            <groupId>egovframework.rte</groupId>
+            <artifactId>egovframework.rte.psl.dataaccess</artifactId>
+            <version>${egovframework.rte.version}</version>
+        </dependency>
+        
+               <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+        </dependency>
 
 	</dependencies>	
 </project>
