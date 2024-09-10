@@ -1,4 +1,4 @@
-package web.dain.model;
+package web.dain.kakaoRequest.model;
 
 import org.apache.ibatis.type.Alias;
 

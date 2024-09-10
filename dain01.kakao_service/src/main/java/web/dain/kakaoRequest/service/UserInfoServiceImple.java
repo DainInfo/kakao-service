@@ -1,20 +1,20 @@
-package web.dain.service;
+package web.dain.kakaoRequest.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
-import web.dain.mapper.CarInfoMapper;
-import web.dain.model.UserInfo;
+import web.dain.kakaoRequest.mapper.UserInfoMapper;
+import web.dain.kakaoRequest.model.UserInfo;
 
 @Validated
 @Service("carInfoService")
-public class CarInfoServiceImple implements CarInfoService{
+public class UserInfoServiceImple implements UserInfoService{
 
     @Autowired 
-    private CarInfoMapper carInfoMapper;
+    private UserInfoMapper userInfoMapper;
 
 	@Override
 	public UserInfo getUserInfo() {
-		return carInfoMapper.getUserInfo();
+		return userInfoMapper.getUserInfo();
 	}
 }
