@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+  
+  <!-- ################### 서울특별시(카카오 홍보/단속 대상) DB ####################### -->
+  <bean id="kakakoUserSqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <property name="dataSource" ref="seoul-kakao-dataSource"/>
+    <property name="configLocation" value="classpath:/sqlmap/sql-mapper-config.xml"/>
+    <property name="mapperLocations" value="classpath:/sqlmap/userInfoMappers/*.xml"/>
+    <property name="typeAliasesPackage" value="web.dain"/>
+  </bean>
+  
+  <!-- kakao user was MapperConfigurer setup for oracle Database Layer with @Mapper("xxxxMapper") in xxxxMapper Interface -->
+  <bean class="egovframework.rte.psl.dataaccess.mapper.MapperConfigurer">
+    <property name="basePackage" value="web.dain"/>
+    <property name="sqlSessionFactoryBeanName" value="kakakoUserSqlSession"/>
+  </bean>
+   
+</beans>

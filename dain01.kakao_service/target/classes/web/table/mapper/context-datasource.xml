@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    
+     <bean id="kakao-userServiceConfig" class="com.zaxxer.hikari.HikariConfig">
+      <property name="poolName" value="springHikariCP" />
+      <property name="driverClassName" value="${kakaUser.datasource.driver.class}" />
+      <property name="jdbcUrl" value="${kakaUser.datasource.url}" />
+      <property name="username" value="${kakaUser.datasource.username}" />
+      <property name="password" value="${kakaUser.datasource.password}" />
+      <property name="connectionTimeout" value="${kakaUser.datasource.connection.timeout}" />
+      <property name="idleTimeout" value="0" />
+      <property name="leakDetectionThreshold" value="0" />
+      <property name="maxLifetime" value="300000" />
+      <property name="maximumPoolSize" value="${kakaUser.datasource.maximumPoolSize}" />
+      <property name="connectionTestQuery" value="${kakaUser.datasource.validation-query}" />
+    </bean>
+    
+    <bean id="kakao-user-dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+      <constructor-arg ref="kakao-userServiceConfig" />
+    </bean>
+ </beans>

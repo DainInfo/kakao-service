@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.dain.mapper.CarInfoMapper">    
+								
+<select id="getUserInfo" parameterType="String" resultType="userInfo">
+	SELECT 
+		F_UID as ci,
+		F_CI as phoneNumber
+	FROM T_NICE_CI 
+	WHERE F_UID like'%241114110%'
+</select>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="jdbcTypeForNull" value="NULL"/>
+        <setting name="defaultFetchSize" value="50"/>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <setting name="callSettersOnNulls" value="true"/>
+        <setting name="cacheEnabled" value="false"/>
+    </settings>
+
+    <typeAliases>
+        <!-- 공통 -->
+        <typeAlias alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+        <typeAlias alias="string" type="java.lang.String"/>
+        <typeAlias alias="int" type="java.lang.Integer"/>
+        <!-- 공통 -->
+
+
+        <!--<package name="kr.go.scup.common.**.model"/>--> <!-- context-mapper.xml 에 설정 : <property name="typeAliasesPackage" value="kr.go.scup"/>-->
+
+    </typeAliases>
+
+    <plugins>
+        <plugin interceptor="web.config.mybatis.interceptor.SqlPageInterceptor"></plugin>
+        <plugin interceptor="web.config.mybatis.interceptor.ExecuteTimeInterceptor"></plugin>
+    </plugins>
+
+</configuration>
