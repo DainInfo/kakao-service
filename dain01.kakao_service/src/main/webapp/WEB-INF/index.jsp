@@ -55,25 +55,18 @@
     </style>
 </head>
 <body>
-
-<%
-    String seq = request.getParameter("seq");
-    if (seq != null) {
-        session.setAttribute("pendingSeq", seq);
-    }
-%>
     <h1>디지털약자 여부 설문</h1>
 
     <div id="description">
         <strong>디지털약자란?</strong><br>
-        	디지털약자란, 디지털 기기와 온라인 서비스를 이용하는 데 어려움을 겪는 사람을 의미합니다.<br><br>
-        <strong>설문에서 ‘예’를 선택하신 경우, 부과된 과태료 고지서는 우편으로 송부됩니다.</strong>
+        디지털약자란, 디지털 기기와 온라인 서비스를 이용하는 데 어려움을 겪는 사람을 의미합니다.<br><br>
+           <strong>설문에서 ‘예’를 선택하신 경우, 부과된 과태료 고지서는 우편으로 송부됩니다.</strong>
     </div>
 
     <div>
     	<form method="post" action="confirm.jsp">
-        	<button name="answer" value="yes" id="yesBtn" type="submit">예</button>
-        	<button name="answer" value="no" id="noBtn" type="submit">아니오</button>
+        	<button id="yesBtn" type="submit">예</button>
+        	<button id="noBtn" type="submit">아니오</button>
         </form>
     </div>
 

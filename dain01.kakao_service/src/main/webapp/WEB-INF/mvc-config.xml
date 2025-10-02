@@ -8,7 +8,7 @@
 
     <!-- Uncomment and your base-package here: -->
          <context:component-scan
-            base-package="dain.web.test"/>  
+            base-package="dain.web.service"/>  
 
 
     <mvc:annotation-driven />
