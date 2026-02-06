@@ -98,7 +98,7 @@
     
 
     <div>
-    	<form method="post" action="close.jsp">
+    	<form method="post" action="index.jsp">
         	<button name="answer" value="close" id="closeBtn" type="submit">창 닫기</button>
         </form>
     </div>

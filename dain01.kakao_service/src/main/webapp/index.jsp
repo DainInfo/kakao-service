@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>디지털약자 여부 설문</title>
+    <title>우편발송 신청</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -57,17 +57,17 @@
 <body>
 
 <%
-    String seq = request.getParameter("seq");
+    String seq = request.getParameter("Seq");
     if (seq != null) {
         session.setAttribute("pendingSeq", seq);
     }
 %>
-    <h1>디지털약자 여부 설문</h1>
+    <h1>우편발송 신청 안내</h1>
 
     <div id="description">
-        <strong>디지털약자란?</strong><br>
-        	디지털약자란, 디지털 기기와 온라인 서비스를 이용하는 데 어려움을 겪는 사람을 의미합니다.<br><br>
-        <strong>설문에서 ‘예’를 선택하신 경우, 부과된 과태료 고지서는 우편으로 송부됩니다.</strong>
+     
+        	'예'를 선택하시면 과태료 고지서가 우편으로 발송됩니다. <br><br>
+       		우편 발송 신청 기간은 <strong>11.18 </strong>까지이며, 신청기간이 지난 후에는<br> 서울특별시   대기정책과(☎02-2133-3652, 3658, 3668)로 연락주시기 바랍니다.
     </div>
 
     <div>
@@ -79,9 +79,6 @@
 
     <div id="result"></div>
 
-    <div id="info">
-        대기정책과(02-2133-3652, 02-2133-3658, 02-2133-3668)
-    </div>
 
    </body>
 </html>

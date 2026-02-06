@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Samsung SCM JTAPI SDK Version 1.0(1.1002)-1 Release</comment>
+<entry key="BROWSER_ADDR_LISTENER">1</entry>
+<entry key="CALL_WAIT_TIME">15</entry>
+<entry key="PBX_IP">192.168.10.214</entry>
+<entry key="SVC_CODE_OVERRIDE">*23</entry>
+<entry key="CSTA_LINES">3001</entry>
+<entry key="BROWSER_FONT_NAME">Arial</entry>
+<entry key="BROWSER_TERMCONN_LISTENER">1</entry>
+<entry key="LINKALIVE_TIME">7000</entry>
+<entry key="BROWSER_CALL_LISTENER">1</entry>
+<entry key="BROWSER_CONN_LISTENER">1</entry>
+<entry key="MAX_EVT_HANDLER_SIZE">5</entry>
+<entry key="BROWSER_CALLCTRL">1</entry>
+<entry key="MAXALIVE_TIME">21000</entry>
+<entry key="BROWSER_ADDR_START">5000</entry>
+<entry key="PBX_PORT">6000</entry>
+<entry key="BROWSER_ADDR_COUNT">1</entry>
+<entry key="LICENSE_KEY">NDJKGJTP-NBNWLFYM-AHWNXP1A-ZZ2MU977-QOXOJS3O-57EXHYEQ</entry>
+<entry key="SVC_CODE_OVERRIDE_WITH_TONE">*23</entry>
+<entry key="BROWSER_FONT_SIZE">11</entry>
+<entry key="LOCAL_IP">192.168.10.70</entry>
+</properties>

@@ -1,7 +1,5 @@
 package dain.web.service;
 
-
-import java.io.InputStreamReader;
 import java.util.Properties;
 
 public class ProUtil {
