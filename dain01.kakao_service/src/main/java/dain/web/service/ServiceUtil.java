@@ -10,7 +10,7 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLSession;
 import org.json.simple.JSONObject;
 
-public class ApiUtil {
+public class ServiceUtil {
 
 	private JSONObject envelopes;
 	private JSONObject envelopesStatus;
